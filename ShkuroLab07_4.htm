@@ -1,0 +1,65 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Замовлення товару</title>
+</head>
+<body>
+<form action="ShkuroLab07_result.html" method="post" target="_blank">
+<table border="1" cellpadding="6" cellspacing="0" align="center" bgcolor="#f0ffff">
+<tr>
+  <td colspan="2" align="center" style="color: red; font-size: 30px; font-weight: bold;">
+    Форма замовлення товару
+  </td>
+</tr>
+<tr>
+  <td width="240">Номер банківського рахунку</td>
+  <td><input type="text" name="bank_account" size="40" maxlength="34" value=""></td>
+</tr>
+<tr>
+  <td>Особовий (персональний) номер користувача</td>
+  <td><input type="text" name="personal_id" size="40" maxlength="20" value=""></td>
+</tr>
+<tr>
+  <td valign="top">Список товарів (можна вибрати декілька)</td>
+  <td>
+    <select name="products" size="6" multiple>
+      <option value="notebook">Ноутбук</option>
+      <option value="mouse">Миша</option>
+      <option value="keyboard">Клавіатура</option>
+      <option value="monitor">Монітор</option>
+      <option value="printer">Принтер</option>
+      <option value="headphones">Навушники</option>
+      <option value="router">Маршрутизатор</option>
+    </select>
+    <br><small>Щоб вибрати кілька — утримуйте Ctrl (Windows) або Cmd (Mac).</small>
+  </td>
+</tr>
+<tr>
+  <td valign="top">Додаткові коментарі</td>
+  <td><textarea name="comments" rows="6" cols="60" wrap="virtual"></textarea></td>
+</tr>
+<tr>
+  <td>Вид оплати (оберіть один)</td>
+  <td>
+    <input type="radio" name="payment" value="cash" checked> Готівковий<br>
+    <input type="radio" name="payment" value="noncash"> Безготівковий розрахунок
+  </td>
+</tr>
+<tr>
+  <td>Яку додаткову інформацію бажаєте отримати?</td>
+  <td>
+    <input type="checkbox" name="info_balance" value="yes"> Дані про залишки на рахунку<br>
+    <input type="checkbox" name="info_payments" value="yes"> Список останніх виплат по рахунку
+  </td>
+</tr>
+<tr>
+  <td colspan="2" align="center">
+    <input type="reset" value="Очистити форму">
+    &nbsp;&nbsp;
+    <input type="submit" value="Надіслати замовлення">
+  </td>
+</tr>
+</table>
+</form>
+</body>
+</html>
