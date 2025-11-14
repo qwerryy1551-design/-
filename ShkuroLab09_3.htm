@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="utf-8">
+    <title> Класи для різних елементів</title>
+    <style>
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        /* Клас для назв розділів */
+        .section-title {
+            font-family: "Georgia", serif;
+            font-size: 24px;
+            font-weight: bold;
+            color: #2e86c1;
+            border-left: 4px solid #2e86c1;
+            padding: 8px 0 8px 15px;
+            margin: 25px 0 15px 0;
+            background-color: #f0f8ff;
+        }
+
+        /* Клас для основного тексту */
+        .main-text {
+            font-family: "Verdana", sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            color: #444;
+            text-align: justify;
+            margin: 12px 0 18px 0;
+            padding: 10px 15px;
+            background-color: white;
+            border-radius: 4px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        /* Клас для виноски */
+        .footnote {
+            font-family: "Tahoma", sans-serif;
+            font-size: 13px;
+            font-style: italic;
+            color: #666;
+            margin-left: 25px;
+            padding: 8px 12px;
+            border-left: 2px solid #e74c3c;
+            background-color: #f9f9f9;
+        }
+
+        /* Клас для меню */
+        .menu {
+            font-family: "Arial", sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+            color: #ffffff;
+            background-color: #2c3e50;
+            display: inline-block;
+            padding: 10px 18px;
+            margin: 0 8px 10px 0;
+            border-radius: 4px;
+            text-decoration: none;
+            transition: background-color 0.2s;
+        }
+
+        .menu:hover {
+            background-color: #3498db;
+        }
+
+        /* Клас для невеликих інформаційних повідомлень */
+        .small {
+            font-family: "Tahoma", sans-serif;
+            font-size: 12px;
+            color: #666;
+            display: block;
+            margin: 6px 0;
+            padding: 5px 8px;
+            background-color: #f0f0f0;
+            border-radius: 3px;
+        }
+
+        nav {
+            text-align: center;
+            margin-bottom: 25px;
+            padding: 15px;
+            background-color: white;
+            border-radius: 4px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .content-section {
+            margin-bottom: 30px;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding: 15px;
+            background-color: white;
+            border-radius: 4px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Лабораторна робота №9 — Використання різних класів</h1>
+
+    <!-- Меню -->
+    <nav>
+        <a href="#section1" class="menu">Вступ</a>
+        <a href="#section2" class="menu">Основна частина</a>
+        <a href="#section3" class="menu">Висновки</a>
+    </nav>
+
+    <!-- Розділ 1 -->
+    <div class="content-section">
+        <div id="section1" class="section-title">Розділ 1 — Вступ</div>
+        <p class="main-text">
+            Це перший розділ з основним текстом, оформленим за допомогою класу <code>main-text</code>. Клас можна використовувати багато разів у документі. CSS класи дозволяють застосовувати однакове форматування до різних елементів, що значно спрощує підтримку веб-сайту.
+        </p>
+        <p class="footnote">Виноска: тут можна додати додаткову інформацію про розділ або посилання на джерела.</p>
+    </div>
+
+    <!-- Розділ 2 -->
+    <div class="content-section">
+        <div id="section2" class="section-title">Розділ 2 — Основна частина</div>
+        <p class="main-text">
+            Основна частина містить кілька абзаців з однаковим форматуванням. Використання класу <code>main-text</code> забезпечує єдність стилю. Це дуже зручно, коли потрібно змінити оформлення всіх текстових блоків одночасно.
+        </p>
+        <p class="footnote">Виноска: додаткові пояснення до розділу. Виноски зазвичай містять другорядну, але корисну інформацію.</p>
+    </div>
+
+    <!-- Розділ 3 -->
+    <div class="content-section">
+        <div id="section3" class="section-title">Розділ 3 — Висновки</div>
+        <p class="main-text">
+            У висновках підводимо підсумки попередніх розділів. Текст повторно використовує клас <code>main-text</code>. CSS класи є потужним інструментом для створення стильного та послідовного дизайну веб-сторінок.
+        </p>
+        <p class="footnote">Виноска: приклад повторного використання класу <code>footnote</code> для демонстрації універсальності підходу.</p>
+    </div>
+
+    <!-- Інформаційні повідомлення -->
+    <footer>
+        <p class="small">Автор: Шкуро О.</p>
+        <p class="small">Сторінка створена: 2025 року</p>
+        <p class="small">Адреса: www.example.com</p>
+    </footer>
+
+</body>
+</html>
